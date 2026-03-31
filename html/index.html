@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Farah Dev</h1>
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="container">
+        <h2>Création de solutions digitales</h2>
+        <p>Développement web, data et design moderne.</p>
+        <button onclick="scrollToSection('contact')">Me contacter</button>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>💻 Développement Web</h3>
+            <p>Sites modernes et responsives.</p>
+        </div>
+        <div class="card">
+            <h3>📊 Data & Analyse</h3>
+            <p>Dashboards et visualisation.</p>
+        </div>
+        <div class="card">
+            <h3>🎨 Design UI/UX</h3>
+            <p>Interfaces intuitives et esthétiques.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projets</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Dashboard ODD</h3>
+            <p>Analyse des données développement durable.</p>
+        </div>
+        <div class="card">
+            <h3>App Gestion Temps</h3>
+            <p>Solution contre la procrastination.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <input type="text" id="name" placeholder="Votre nom">
+    <input type="email" id="email" placeholder="Votre email">
+    <textarea id="message" placeholder="Votre message"></textarea>
+    <button onclick="sendMessage()">Envoyer</button>
+    <p id="response"></p>
+</section>
+
+<footer>
+    <p>© 2026 Farah Dev | Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
